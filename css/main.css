@@ -75,6 +75,73 @@ a:hover {
 /* =========================
    Navigation
 ========================= */
+/* ========================================
+   NAVBAR LAYOUT
+   ======================================== */
+
+.portfolio-navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    flex-shrink: 0;
+}
+
+.navbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: auto;
+}
+
+/* Desktop navigation */
+
+@media (min-width: 992px) {
+
+    .navbar-controls {
+        
+        margin-left: 0;
+        display: grid;
+        align-items: right;
+        order: 3;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+        margin-left: 3rem;
+    }
+
+    .navbar-nav {
+        gap: 0.35rem;
+    }
+
+    .theme-toggle {
+        margin-left: 1rem;
+    }
+} 
+
+/* Mobile navigation */
+
+@media (max-width: 991.98px) {
+
+    .navbar-controls {
+        margin-left: auto;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .theme-toggle {
+        margin-left: 0;
+    }
+
+    .navbar-toggler {
+        margin-left: 0;
+    }
+}
 
 .portfolio-navbar {
     background: var(--nav-background);
@@ -240,7 +307,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     
-    margin-right: 1rem;
+    margin-left: 0;
 
     border: 1px solid var(--color-border);
     border-radius: 50%;

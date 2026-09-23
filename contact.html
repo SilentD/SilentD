@@ -33,52 +33,56 @@
         <a class="navbar-brand" href="index.html">
           Silent<span class="brand-accent">.</span>
         </a>
-        <button
-          id="themeToggle"
-          class="theme-toggle"
-          type="button"
-          aria-label="Switch theme"
-        >
-          <span id="themeIcon">☀</span>
-        </button>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#portfolioNavigation"
-          aria-controls="portfolioNavigation"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
+        <!-- Mobile / navbar controls -->
+        <div class="navbar-controls">
+          <button
+            id="themeToggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch theme"
+          >
+            <span id="themeIcon">☀</span>
+          </button>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#portfolioNavigation"
+            aria-controls="portfolioNavigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
         <div class="collapse navbar-collapse" id="portfolioNavigation">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"> Home </a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="about.html"> About </a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="projects.html"> Projects </a>
+              <a class="nav-link" href="projects.html">Projects</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="resume.html"> Resume </a>
+              <a class="nav-link" href="resume.html">Resume</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact </a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <main>
       <!-- Contact Hero -->
       <section class="section-padding contact-hero">
@@ -109,7 +113,9 @@
             <!-- Email -->
             <div class="col-md-6 col-lg-4">
               <a href="mailto:dsmantjane@gmail.com" class="contact-card">
-                <div class="contact-icon">@</div>
+                <div class="contact-icon">
+                  <img src="assets/images/gmail.png" />
+                </div>
 
                 <span class="contact-label"> EMAIL </span>
 
@@ -127,12 +133,14 @@
             <!-- GitHub -->
             <div class="col-md-6 col-lg-4">
               <a
-                href="https://www.gitgub.com/SilentD"
+                href="https://www.github.com/SilentD"
                 class="contact-card"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="contact-icon">GH</div>
+                <div class="contact-icon">
+                  <img src="assets/images/github.png" />
+                </div>
 
                 <span class="contact-label"> GITHUB </span>
 
@@ -155,7 +163,10 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="contact-icon">in</div>
+                <div class="contact-icon">
+                  <img src="assets/images/linkedin.png" />
+                </div>
+                <img />
 
                 <span class="contact-label"> LINKEDIN </span>
 
