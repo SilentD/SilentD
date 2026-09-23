@@ -1,0 +1,834 @@
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+/* =========================================
+   ABOUT PAGE TEXT
+   ========================================= */
+
+.about-page p {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.about-page .text-muted {
+    color: var(--color-text) !important;
+}
+
+.about-page small.text-muted {
+    color: var(--color-text-muted) !important;
+}
+
+.about-page .lead {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-surface {
+    background: var(--color-surface);
+}
+
+.section-eyebrow {
+    display: inline-block;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.section-title {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.about-highlight-card,
+.education-preview-card {
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-surface);
+    transition:
+        transform var(--transition-medium),
+        border-color var(--transition-medium);
+}
+
+.about-highlight-card:hover,
+.education-preview-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.highlight-label {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.about-highlight-card h3,
+.education-preview-card h3 {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.portfolio-card {
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-surface);
+    transition:
+        transform var(--transition-medium),
+        border-color var(--transition-medium);
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.portfolio-card h3 {
+    margin-top: 1.5rem;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.card-number {
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tech-tag {
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: var(--color-surface-light);
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    transition:
+        color var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.tech-tag:hover {
+    color: var(--color-text);
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.preview-line {
+    width: 100%;
+    height: 1px;
+    margin: 1.5rem 0;
+    background: var(--color-border);
+}
+
+.btn-accent {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid var(--color-accent);
+    background: var(--color-accent);
+    color: #ffffff;
+    font-weight: 600;
+    transition:
+        background var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.btn-accent:hover {
+    border-color: var(--color-accent-hover);
+    background: var(--color-accent-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.portfolio-footer {
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-border);
+    background: var(--color-background);
+}
+
+.footer-link {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+    color: var(--color-accent);
+}
+
+/* =========================================
+   PROJECTS PAGE
+   ========================================= */
+
+.projects-page p {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.projects-page .lead {
+    color: var(--color-text);
+}
+
+.featured-project {
+    padding: 3rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1.25rem;
+    background: var(--color-background);
+}
+
+.project-status {
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.project-title {
+    color: var(--color-text);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.project-description {
+    color: var(--color-text) !important;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 600;
+    transition:
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.project-link:hover {
+    color: var(--color-accent);
+    transform: translateX(3px);
+}
+
+.project-visual {
+    min-height: 320px;
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-surface);
+    position: relative;
+    overflow: hidden;
+}
+
+.visual-label {
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.visual-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.visual-symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--color-accent);
+    border-radius: 50%;
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.visual-content p {
+    color: var(--color-text-muted) !important;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.project-card {
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-surface);
+    transition:
+        transform var(--transition-medium),
+        border-color var(--transition-medium);
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-accent);
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-category {
+    color: var(--color-text-muted);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.project-card h3 {
+    margin-top: 1.5rem;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.project-card p {
+    margin-top: 1rem;
+    color: var(--color-text) !important;
+}
+
+/* =========================================
+   RESUME PAGE
+   ========================================= */
+
+.resume-page p {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.resume-page .lead {
+    color: var(--color-text);
+}
+
+.resume-role {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.resume-skill-card {
+    height: 100%;
+    padding: 1.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-surface);
+    transition:
+        transform var(--transition-medium),
+        border-color var(--transition-medium);
+}
+
+.resume-skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.resume-skill-card h3 {
+    margin-top: 1.25rem;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.resume-skill-card ul {
+    margin: 1.25rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.resume-skill-card li {
+    padding: 0.45rem 0;
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.9rem;
+}
+
+.resume-skill-card li:last-child {
+    border-bottom: none;
+}
+
+
+/* Timeline */
+
+.resume-timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 1px solid var(--color-border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 0.25rem;
+    left: -2.42rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 50%;
+    background: var(--color-background);
+}
+
+.timeline-label {
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.timeline-item h3 {
+    margin-top: 0.75rem;
+    color: var(--color-text);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+/* Projects */
+
+.resume-project {
+    height: 100%;
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-surface);
+    transition:
+        transform var(--transition-medium),
+        border-color var(--transition-medium);
+}
+
+.resume-project:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.resume-project h3 {
+    margin-top: 1rem;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.resume-project p {
+    margin-top: 1rem;
+}
+
+
+/* Strengths */
+
+.resume-strength {
+    height: 100%;
+    padding: 1.75rem;
+    border-left: 2px solid var(--color-accent);
+}
+
+.resume-strength h3 {
+    color: var(--color-text);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+/* CTA */
+
+.resume-cta {
+    padding: 3rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1.25rem;
+    background: var(--color-surface);
+}
+
+.resume-cta h2 {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.resume-cta p {
+    max-width: 650px;
+    margin-top: 1rem;
+}
+
+/* =========================================
+   EDUCATION PAGE
+   ========================================= */
+
+.education-page p {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.education-page .lead {
+    color: var(--color-text);
+}
+
+.education-intro {
+    max-width: 760px;
+}
+
+
+/* Academic Timeline */
+
+.education-timeline {
+    position: relative;
+    margin-left: 0.5rem;
+    padding-left: 2.5rem;
+    border-left: 1px solid var(--color-border);
+}
+
+.education-entry {
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.education-entry:last-child {
+    padding-bottom: 0;
+}
+
+.education-marker {
+    position: absolute;
+    left: -3.05rem;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--color-accent);
+    border-radius: 50%;
+    background: var(--color-surface);
+    color: var(--color-accent);
+    font-size: 0.65rem;
+    font-weight: 700;
+}
+
+.education-status {
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.education-content h3 {
+    margin-top: 0.75rem;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.education-institution {
+    color: var(--color-text-muted) !important;
+    font-weight: 600;
+}
+
+.education-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 1.5rem;
+}
+
+
+/* Coursework */
+
+.course-card {
+    height: 100%;
+    padding: 1.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-surface);
+    transition:
+        transform var(--transition-medium),
+        border-color var(--transition-medium);
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.course-card h3 {
+    margin-top: 1.25rem;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+/* Academic Projects */
+
+.academic-project-card {
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-background);
+    transition:
+        transform var(--transition-medium),
+        border-color var(--transition-medium);
+}
+
+.academic-project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.academic-project-card h3 {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+
+/* Learning */
+
+.learning-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.learning-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--color-text);
+}
+
+.learning-item span {
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+
+/* Certifications */
+
+.certification-placeholder {
+    max-width: 700px;
+    padding: 2rem;
+    border: 1px dashed var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-surface);
+}
+
+.certification-placeholder h3 {
+    margin-top: 1rem;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+
+/* CTA */
+
+.education-cta {
+    padding: 3rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1.25rem;
+    background: var(--color-surface);
+}
+
+.education-cta h2 {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.education-cta p {
+    max-width: 700px;
+    margin-top: 1rem;
+}
+
+
+/* =========================================
+   CONTACT PAGE
+   ========================================= */
+
+.contact-page p {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.contact-page .lead {
+    color: var(--color-text);
+}
+
+
+/* Contact Cards */
+
+.contact-card {
+    display: block;
+    height: 100%;
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-background);
+    color: var(--color-text);
+    text-decoration: none;
+
+    transition:
+        transform var(--transition-medium),
+        border-color var(--transition-medium);
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-accent);
+    color: var(--color-text);
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-bottom: 1.5rem;
+
+    border: 1px solid var(--color-accent);
+    border-radius: 0.75rem;
+
+    color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.contact-label {
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.contact-card h2 {
+    margin-top: 0.75rem;
+    color: var(--color-text);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.contact-card p {
+    margin-top: 0.75rem;
+    color: var(--color-text) !important;
+}
+
+.contact-action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition:
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.contact-card:hover .contact-action {
+    color: var(--color-accent);
+    transform: translateX(3px);
+}
+
+
+/* Availability */
+
+.contact-status-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+    padding: 2rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    background: var(--color-surface);
+}
+
+.status-dot {
+    flex-shrink: 0;
+
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-top: 0.35rem;
+
+    border-radius: 50%;
+    background: var(--color-accent);
+
+    box-shadow:
+        0 0 0 5px rgba(217, 70, 239, 0.12);
+}
+
+.status-label {
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.contact-status-card h3 {
+    margin-top: 0.6rem;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.contact-status-card p {
+    margin-bottom: 0;
+    color: var(--color-text-muted) !important;
+    font-size: 0.9rem;
+}
+
+
+/* CTA */
+
+.contact-cta {
+    padding: 3rem;
+    border: 1px solid var(--color-border);
+    border-radius: 1.25rem;
+    background: var(--color-surface);
+}
+
+.contact-cta h2 {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.contact-cta p {
+    max-width: 650px;
+    margin-top: 1rem;
+}
