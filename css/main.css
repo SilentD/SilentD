@@ -237,7 +237,9 @@ a:hover {
 }
 
 @media (max-width: 991.98px) {
-
+    .contact-icon {
+  background: var(--color-surface-light);
+}
     .navbar-collapse {
         margin-top: 1rem;
         padding: 0.5rem;
