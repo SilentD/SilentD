@@ -167,6 +167,7 @@ a:hover {
 }
 
 .brand-accent {
+    font-size: 35px;
     color: var(--color-accent);
 }
 
@@ -346,7 +347,7 @@ a:hover {
 }
 
 .min-vh-75 {
-    min-height: fit-content;
+    min-height: fit-cotent;
 }
 
 .hero-eyebrow,
